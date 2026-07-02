@@ -52,7 +52,7 @@ function Cardapio() {
               <div className="w-40 h-60 md:w-50 flex flex-col bg-white rounded-2xl hover:scale-105 duration-300 ease-in-out shadow-lg shadow-black/10">
                 <div className="h-1/2">
                   <img
-                    src={pizza.image}
+                    src={`${import.meta.env.BASE_URL}${pizza.image}`}
                     className=" object-cover rounded-t-2xl"
                     alt=""
                   />

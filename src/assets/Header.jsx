@@ -5,7 +5,7 @@ function Header() {
    return (
      <section className=" h-25 w-full fixed z-50 p-3 flex justify-around bg-neutral-100 border-b-2 border-orange-main items-center">
        <div>
-         <img src="/images/icon .png" className="w-40 h-full" alt="" />
+         <img src={`${import.meta.env.BASE_URL}/images/icon .png`} className="w-40 h-full" alt="" />
        </div>
        <div className="flex gap-4">
          <Link

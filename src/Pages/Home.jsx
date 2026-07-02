@@ -67,21 +67,21 @@ export default function Home() {
           <div className="relative bg-cover rounded-full bg-center mt-10 p-5">
             <div className="md:w-90 md:h-90">
               <img
-                src="/images/pizza-image.jpg"
+                src={`${import.meta.env.BASE_URL}/images/pizza-image.jpg`}
                 className="border-4 border-white w-full h-full object-cover rounded-full object-center"
                 alt=""
               />
             </div>
             <div className="absolute -top-5 right-7 md:-top-9 md:-right-4 z-40 bg-white md:w-26 md:h-26 rounded-full p-8">
               <img
-                src="/images/coracao.png"
+                src={`${import.meta.env.BASE_URL}/images/coracao.png`}
                 className="w-full h-full animate-pulse"
                 alt=""
               />
             </div>
             <div className="absolute scale-80 top-50 md:top-75 md:-left-4 z-40 bg-white md:w-26 md:h-26 rounded-full p-8">
               <img
-                src="/images/folha-de-louro.png"
+                src={`${import.meta.env.BASE_URL}/images/folha-de-louro.png`}
                 className="w-full h-full animate-pulse"
                 alt=""
               />
@@ -115,20 +115,19 @@ export default function Home() {
 
           <div className="mt-10 w-full max-w-3xl">
             <img
-              src="/images/loja.png"
+              src={`${import.meta.env.BASE_URL}/images/loja.png`}
               className="w-full max-h-120 rounded-4xl object-cover object-center "
               alt=""
             />
           </div>
         </section>
-        <section className=" w-full h-260 md:h-150 flex-col justify-center items-center bg-[url(/images/italy-back.jpg)] bg-cover bg-center bg-no-repeat" >
+        <section className=" w-full h-260 md:h-150 flex-col justify-center items-center bg-[url(/images/italy-back.jpg)] bg-cover bg-center bg-no-repeat">
           <div className="text-3xl md:text-4xl md:mb-10 font-justo font-bold mb-5 text-center h-12 justify-center w-full md:pt-30 ">
             <div className="md:w-100 md:m-auto md:rounded-3xl">
               <h1 className="bg-neutral-100 pt-5 pb-3 md:rounded-3xl">
-              FAVORITOS DOS <span className="text-orange-main">CLIENTES</span>
-            </h1>
+                FAVORITOS DOS <span className="text-orange-main">CLIENTES</span>
+              </h1>
             </div>
-            
           </div>
           <div className="flex-col flex md:w-300 md:m-auto md:h-90 md:rounded-3xl  md:flex-row pt-20 justify-center h-full bg-white">
             {favs.map((pzz, index) => (
@@ -141,7 +140,7 @@ export default function Home() {
                     <div className="w-full h-60 flex-col mb-10 shadow-2xl/40 hover:scale-120 duration-300 rounded-3xl ease-in-out">
                       <div className="w-full h-30">
                         <img
-                          src={pzz.image}
+                          src={`${import.meta.env.BASE_URL}${pzz.image}`}
                           alt=""
                           className="w-full h-full object-cover rounded-t-3xl"
                         />

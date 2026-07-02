@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="flex items-center justify-start">
               <img
                 className="h-20 w-40 md:h-auto md:w-80 object-contain"
-                src="/images/icon%20.png"
+                src={`${import.meta.env.BASE_URL}/images/icon%20.png`}
                 alt="Ícone da The Best Pizzaria"
               />
             </div>
@@ -17,12 +17,12 @@ export default function Footer() {
             <div className="h-1/2 flex flex-col justify-items-start">
               <img
                 className="w-50 h-25 object-cover justify-self-start "
-                src="/images/ssl.png"
+                src={`${import.meta.env.BASE_URL}/images/ssl.png`}
                 alt=""
               />
               <img
                 className="max-w-60 h-20"
-                src="/images/blindado.png"
+                src={`${import.meta.env.BASE_URL}/images/blindado.png`}
                 alt=""
               />
             </div>
