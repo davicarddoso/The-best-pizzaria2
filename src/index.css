@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-orange-main: #df4732;
+  --color-orange-ligh: #ff914d;
+  --font-poppins: "Poppins", sans-serif;
+  --font-justo: "Cantarell", sans-serif;
+  --font-righteous: "Righteous", cursive;
+  --font-cantata: "Cantata", serif;
+  --font-caladea: "Caladea", serif;
+  --font-divertida: "Shrikhand", sans-serif;
+
+}
+.text-gradient {
+  background: -webkit-linear-gradient(150deg,rgba(223, 71, 50, 1) 32%, rgba(255, 145, 77, 1) 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: oklch(98.7% 0.022 95.277);
+}
+@keyframes simple-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade {
+  animation: fade 0.4s ease-in-out;
+}
+.animate-bounce {
+  animation: simple-bounce 4s ease-in-out infinite;
+}
+
+@keyframes soft-ping {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(22, 101, 52, 0.45);
+  }
+
+  70% {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 16px rgba(22, 101, 52, 0);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(22, 101, 52, 0);
+  }
+}
+
+.animate-soft-ping {
+  animation: soft-ping 1.6s ease-out infinite;
+}
+
